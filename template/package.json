@@ -20,7 +20,7 @@
     "build:lib": "microbundle --no-compress --format modern,cjs --jsx React.createElement --jsxFragment React.Fragment",
     "start:lib": "microbundle watch --no-compress --format modern,cjs --jsx React.createElement --jsxFragment React.Fragment",
     "build:example": "cd example && npm run build",
-    "start:example": "cd example && npm run start",
+    "start:example": "cd example && cross-env NODE_ENV=production npm run build:weapp -- --watch",
     "test:build": "run-s build",
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
@@ -77,8 +77,8 @@
     "react": "*"
   },
   "devDependencies": {
-    "@tarojs/components": "^3.6.16",
-    "@tarojs/taro": "^3.6.16",
+    "@tarojs/components": "3.6.23",
+    "@tarojs/taro": "3.6.23",
     "@kne/mini-example": "^0.1.1",
     "@kne/microbundle": "^0.15.5",
     "cross-env": "^7.0.3",
