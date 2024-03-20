@@ -79,7 +79,7 @@
   "devDependencies": {
     "@tarojs/components": "3.6.23",
     "@tarojs/taro": "3.6.23",
-    "@kne/mini-example": "^0.1.1",
+    "@kne/mini-example": "^0.1.9",
     "@kne/microbundle": "^0.15.5",
     "cross-env": "^7.0.3",
     "husky": "^9.0.11",

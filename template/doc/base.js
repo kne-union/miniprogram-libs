@@ -1,5 +1,7 @@
+const {default:<%=templateLibs.camelCase(name)%>} = _<%=templateLibs.camelCase(name)%>;
+
 const BaseExample = ()=>{
-    return '我是一个示例组件';
+    return <<%=templateLibs.camelCase(name)%> />;
 };
 
 render(<BaseExample />);
